@@ -1,18 +1,22 @@
 program = require 'commander'
 pkg = require '../package.json'
 md = require 'markdown-word'
+path = require 'path'
 
 program
   .version(pkg.version)
-  .usage('<markdown> <word>')
+  .usage('<markdown.md> <word.docx>')
   .parse process.argv
 
 markdown = program.args.shift()
 word = program.args.shift()
 
-console.log 'Missing <markdown>' unless markdown
-unless word
-  console.log 'Missing <word>'
+unless markdown and word
+  console.log program.helpInformation()
+  return
+
+unless path.existsSync markdown
+  console.log "#{markdown} doesnt exist"
   return
 
 md.documentFromFile markdown, word, (err, data) ->

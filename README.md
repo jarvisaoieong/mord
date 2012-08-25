@@ -1,6 +1,6 @@
 # Mord
 
-Markdown to Microsoft Word command line tool
+A command line tool converting Markdown to Microsoft Word
 
 ## Installion
 
@@ -8,7 +8,7 @@ Markdown to Microsoft Word command line tool
 
 ## Usage
 
-    $ mord source.md
+    $ mord <markdown.md> <word.docx>
 
 ## License
 
