@@ -15,7 +15,7 @@
     "doc",
     "docx"
   ],
-  "author": "jarvis",
+  "author": "jarvis.ai",
   "license": "MIT",
   "dependencies": {
     "commander": "~1.0.1",
