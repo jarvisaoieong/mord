@@ -4,7 +4,7 @@ A command line tool converting Markdown to Microsoft Word
 
 ## Installion
 
-    $ npm install mord
+    $ npm install mord -g
 
 ## Usage
 
